@@ -1,0 +1,190 @@
+{ 
+    Margin: 0; padding: 0; 
+    Box-sizing: border-box; 
+    Font-family: “Poppins”, sans-serif; 
+} 
+ 
+Body { 
+    Background: #0f0f0f; 
+    Color: white; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+} 
+ 
+Nav { 
+    Display: flex; 
+    Justify-content: space-between; 
+    Align-items: center; 
+    Padding: 20px 60px; 
+    Background: #111; 
+    Border-bottom: 2px solid #1df27f; 
+} 
+ 
+.logo { 
+    Font-size: 28px; 
+    Font-weight: bold; 
+    Color: #1df27f; 
+} 
+ 
+.nav-links { 
+    Display: flex; 
+    Gap: 30px; 
+} 
+ 
+.nav-links a { 
+    Text-decoration: none; 
+    Color: #ccc; 
+    Font-size: 18px; 
+    Transition: color 0.3s ease; 
+} 
+ 
+.nav-links a:hover { 
+    Color: #1df27f; 
+} 
+ 
+.cta-btn { 
+    Padding: 10px 22px; 
+    Background: #1df27f; 
+    Color: black; 
+    Border: none; 
+    Border-radius: 6px; 
+    Cursor: pointer; 
+    Font-weight: bold; 
+    Transition: transform 0.2s ease, background 0.3s; 
+} 
+ 
+.cta-btn:hover { 
+    Transform: scale(1.05); 
+    Background: white; 
+} 
+
+.hero { 
+    Display: flex; 
+    Justify-content: space-between; 
+    Align-items: center; 
+    Padding: 70px 60px; 
+} 
+ 
+.hero-text { 
+    Width: 45%; 
+} 
+ 
+.hero-text h1 { 
+    Font-size: 55px; 
+    Line-height: 1.2; 
+} 
+ 
+.highlight { 
+    Color: #1df27f; 
+} 
+ 
+.hero-text p { 
+    Font-size: 18px; 
+    Color: #bfbfbf; 
+    Margin: 20px 0 30px; 
+} 
+ 
+.primary-btn { 
+    Background: #1df27f; 
+    Padding: 14px 26px; 
+    Color: black; 
+    Border: none; 
+    Border-radius: 6px; 
+    Cursor: pointer; 
+    Font-size: 18px; 
+    Font-weight: bold; 
+Transition: transform 0.3s ease, background 0.3s ease; 
+} 
+ 
+.primary-btn:hover { 
+    Transform: translateY(-4px); 
+    Background: white; 
+} 
+ 
+/* HERO IMAGE */ 
+.hero-img img { 
+    Width: 420px; 
+    Border-radius: 20px; 
+    Box-shadow: 0 0 20px rgba(29, 242, 127, 0.4); 
+} 
+ 
+.features { 
+    Display: flex; 
+    Justify-content: space-around; 
+    Margin: 80px 0; 
+    Padding: 0 60px; 
+} 
+ 
+.feature { 
+    Width: 30%; 
+    Padding: 20px; 
+    Background: #111; 
+    Border-radius: 12px; 
+Text-align: center; 
+    Border: 2px solid #1df27f; 
+    Transition: transform 0.3s ease, box-shadow 0.3s ease; 
+} 
+ 
+.feature:hover { 
+    Transform: translateY(-8px); 
+    Box-shadow: 0 0 20px rgba(29, 242, 127, 0.4); 
+} 
+ 
+@keyframes fadeIn { 
+    From { opacity: 0; } 
+    To { opacity: 1; } 
+} 
+ 
+@keyframes slideInLeft { 
+    From { opacity: 0; transform: translateX(-50px); } 
+    To { opacity: 1; transform: translateX(0); } 
+} 
+ 
+@keyframes fadeUp { 
+    From { opacity: 0; transform: translateY(40px); } 
+    To { opacity: 1; transform: translateY(0); } 
+} 
+ 
+.fade-in { 
+Animation: fadeIn 1s ease forwards; 
+} 
+ 
+.slide-in-left { 
+    Animation: slideInLeft 1s ease forwards; 
+} 
+ 
+.fade-up { 
+    Animation: fadeUp 1s ease forwards; 
+} 
+ 
+.delay-1 { animation-delay: 0.3s; } 
+.delay-2 { animation-delay: 0.6s; } 
+ 
+@media (max-width: 768px) { 
+ 
+    Nav { 
+        Padding: 20px; 
+    } 
+ 
+    .hero { 
+        Flex-direction: column; 
+        Text-align: center; 
+    } 
+ 
+    .hero-text, .hero-img { 
+        Width: 100%; 
+} 
+ 
+    .hero-img img { 
+        Margin-top: 30px; 
+        Width: 80%; 
+    } 
+ 
+    .features { 
+        Flex-direction: column; 
+        Gap: 20px; 
+    } 
+ 
+    .feature { 
+        Width: 90%; 
+    } 
+} 
